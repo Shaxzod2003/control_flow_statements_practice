@@ -8,7 +8,11 @@ def task_1(x):
     return:
         int
     """
-    return x
+    if x>0:
+      return x+1
+    return x-2
+print(task_1(45))
+
 
 # Example:
 # task_1(1) -> 1
@@ -25,7 +29,13 @@ def task_2(x):
     Returns:
         int
     """
-    return x
+    if x>0:
+      result=x+1
+    if x<0:
+       result=x-2
+    if x==0:
+       result=x
+    return result        
 
 # Example:
 # task_2(1) -> 2
@@ -42,7 +52,15 @@ def task_3(x):
     return:
         int
     """
-    return x
+    if x>0:
+       result=x+1
+    if x<0:
+       result=x-2
+    if x==0:
+       result=10
+    return result   
+     
+  
 
 
 # Example:
@@ -60,7 +78,14 @@ def task_4(a,b,c):
     return:
         int
     """
-    return 0
+    if a<0:
+      a=0
+    if b<0:
+       b=0
+    if c<0:
+       c=0
+    return a+b+c
+print(task_4(2,-3,5))
 
 # Example:
 # task_4(1,2,3) -> 6
@@ -79,7 +104,15 @@ def task_5(a,b,c):
 
 
     """
-    return 0
+    count   =0
+    if a>0:
+       count +=1
+    if b>0:
+       count +=1
+    if c>0:
+       count +=1  
+    return count
+print(task_5(1,-2,3))
 
 # Example:
 # task_5(1,2,3) -> 3
